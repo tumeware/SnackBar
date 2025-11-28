@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodz | Open Food Facts + AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-main">
+          <div class="badge">Rebase skill demo</div>
+          <p class="eyebrow">Open Food Facts x AI</p>
+          <h1>Data first. No hype. Ruokatuotteiden nopea arviointi.</h1>
+          <p class="lede">
+            Hae tuotteita Open Food Factsista, kurkkaa makrot, ja pyydä AI:lta selkeä suositus ilman ylimääräistä
+            hypeä. Rakennettu senioritasoiseksi referenssiksi.
+          </p>
+          <form id="search-form" class="search">
+            <input id="search-input" type="search" name="q" placeholder="Etsi esim. 'kefir', 'protein bar'..." />
+            <button type="submit">Hae</button>
+          </form>
+          <p class="hint">Demo ei tallenna tietoja. AI vaatii oman avaimen (.env).</p>
+        </div>
+        <div class="hero-card">
+          <p>Laadukas arviointikokemus</p>
+          <ul>
+            <li>Real-time haku Open Food Factsista</li>
+            <li>AI analysoi tuotteet kontekstilla</li>
+            <li>Saumaton UI ilman framework-riippuvuutta</li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="content">
+        <section>
+          <div class="section-head">
+            <h2>Hakutulokset</h2>
+            <div id="status" class="status">Valmiina hakuun.</div>
+          </div>
+          <div id="results" class="grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <div id="analysis-modal" class="modal hidden">
+      <div class="modal-backdrop"></div>
+      <div class="modal-card">
+        <button id="modal-close" class="modal-close" aria-label="Sulje">×</button>
+        <div id="modal-body" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
