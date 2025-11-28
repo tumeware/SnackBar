@@ -1,4 +1,4 @@
-# Foodz – Open Food Facts x AI Demo
+# SnackBar – Open Food Facts x AI Demo
 
 Small but production-ready reference that:
 

@@ -5,5 +5,5 @@ const app = createApp();
 const port = app.get("port") || config.PORT;
 
 app.listen(port, () => {
-  console.log(`foodz server ready on http://localhost:${port}`);
+  console.log(`SnackBar server ready on http://localhost:${port}`);
 });
